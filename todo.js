@@ -4,4 +4,5 @@ var appendHtml = (element, html) => element.insertAdjancentHTML('beforeend', htm
 var ajax = function(method, path, data, callback) {
     var r = new XMLHttpRequest()
     r.open(method, path, true)
+    r.setRequestHeader('Content-Type', 'application/json')
 }
