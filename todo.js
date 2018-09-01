@@ -5,5 +5,12 @@ var ajax = function(method, path, data, callback) {
     var r = new XMLHttpRequest()
     r.open(method, path, true)
     r.setRequestHeader('Content-Type', 'application/json')
-    r.onreadystatechange
+    r.onreadystatechange = function() {
+        if (r.readystate == 4) {
+            callback(r.response)
+        }
+    }
+    r.send()
 }
+
+var url = 'https://vip.kybmig.cc/sandbox/todo/476274948/all'
