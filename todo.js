@@ -39,6 +39,7 @@ var bindEventAdd = () => {
                 log('rrrr', r)
                 var t = JSON.parse(r)
                 log('创建成功', t)
+                console.log();
             })
         }
     })
