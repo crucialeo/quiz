@@ -14,3 +14,4 @@ var ajax = function(method, path, data, callback) {
 }
 
 var url = 'https://vip.kybmig.cc/sandbox/todo/476274948/all'
+var method = 'GET'
